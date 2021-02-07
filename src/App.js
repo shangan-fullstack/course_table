@@ -1,7 +1,7 @@
 import './App.css';
 import CourseTimeline from './components/CourseTimeline';
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route
 } from "react-router-dom";
@@ -11,7 +11,7 @@ function App() {
         <div className="App">
             <Router basename="/course_table">
                 <Switch>
-                    <Route path={["/:period", "/"]}>
+                    <Route path={["/:period", "/", "/course_table",  "/course_table/", "/course_table/:period"]}>
                         <CourseTimeline />
                     </Route>
                 </Switch>
