@@ -11,6 +11,7 @@ import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import Typography from '@material-ui/core/Typography';
 import { CourseContents } from '../contents/CourseContents';
 import { DateUtil } from '../util/DateUtil';
+import { useParams } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     block: {
@@ -28,8 +29,13 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
+const legacyPeriod = 8;
+
 export default function CourseTimeline() {
     const classes = useStyles();
+    const period = useParams().period || legacyPeriod;
+    const contents = CourseContents[period];
+
     return (
         <Timeline align="left" className={classes.maxWidth66}>
             {generateTimelineItems()}
@@ -37,7 +43,10 @@ export default function CourseTimeline() {
     );
 
     function generateTimelineItems() {
-        return CourseContents.map(content => (
+        if (!contents) {
+            return <div>没有此期课程</div>;
+        }
+        return contents.map(content => (
             <TimelineItem key={content.title}>
                 <TimelineOppositeContent className={classes.maxWidth20}>
                     <Typography color="textSecondary">{DateUtil.displayTimeInUserTimeZone(content.startTime, content.timezone)}</Typography>
