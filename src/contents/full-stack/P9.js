@@ -2,7 +2,7 @@ export const P9 = [
     {
         type: "non_expirement",
         startTime: "2021-02-20 10:00",
-        endTime: "2021-02-20 12:30",
+        endTime: "2021-02-20 12:00",
         timezone: "America/Los_Angeles",
         title: "第二章 JS基础（一）",
         topics: [
@@ -17,7 +17,7 @@ export const P9 = [
     {
         type: "non_expirement",
         startTime: "2021-02-21 10:00",
-        endTime: "2021-02-21 12:30",
+        endTime: "2021-02-21 12:00",
         timezone: "America/Los_Angeles",
         title: "第三章 JS基础（二）",
         topics: [
@@ -31,7 +31,7 @@ export const P9 = [
     {
         type: "non_expirement",
         startTime: "2021-02-21 14:00",
-        endTime: "2021-02-21 16:30",
+        endTime: "2021-02-21 16:00",
         timezone: "America/Los_Angeles",
         title: "第四章 HTML与CSS",
         topics: [
@@ -44,7 +44,7 @@ export const P9 = [
     {
         type: "non_expirement",
         startTime: "2021-02-27 10:00",
-        endTime: "2021-02-27 12:30",
+        endTime: "2021-02-27 12:00",
         timezone: "America/Los_Angeles",
         title: "第五章 React",
         topics: [
@@ -89,7 +89,7 @@ export const P9 = [
     {
         type: "non_expirement",
         startTime: "2021-03-06 10:00",
-        endTime: "2021-03-06 12:30",
+        endTime: "2021-03-06 12:00",
         timezone: "America/Los_Angeles",
         title: "第六章 Spring Boot",
         topics: [
@@ -123,7 +123,7 @@ export const P9 = [
     {
         type: "non_expirement",
         startTime: "2021-03-07 10:00",
-        endTime: "2021-03-07 12:30",
+        endTime: "2021-03-07 12:00",
         timezone: "America/Los_Angeles",
         title: "第七章 MySQL与Hibernate",
         topics: [
