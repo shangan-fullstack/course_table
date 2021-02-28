@@ -88,8 +88,8 @@ export const P9 = [
     },
     {
         type: "non_expirement",
-        startTime: "2021-03-06 10:00",
-        endTime: "2021-03-06 12:00",
+        startTime: "2021-03-06 09:30",
+        endTime: "2021-03-06 11:30",
         timezone: "America/Los_Angeles",
         title: "第六章 Spring Boot",
         topics: [
@@ -104,8 +104,8 @@ export const P9 = [
     },
     {
         type: "expirement",
-        startTime: "2021-03-06 14:00",
-        endTime: "2021-03-06 17:00",
+        startTime: "2021-03-06 13:00",
+        endTime: "2021-03-06 16:00",
         timezone: "America/Los_Angeles",
         title: "实验课3",
         subtitle: "选课系统后端部分1：设计RESTful API，返回in memory数据库的内容",
@@ -154,8 +154,8 @@ export const P9 = [
     },
     {
         type: "expirement",
-        startTime: "2021-03-13 10:00",
-        endTime: "2021-03-13 12:30",
+        startTime: "2021-03-13 09:30",
+        endTime: "2021-03-13 11:30",
         timezone: "America/Los_Angeles",
         title: "实验课5",
         subtitle: "选课系统前端部分2 - 实现登录, cookies存储，前后端整合",
@@ -169,8 +169,8 @@ export const P9 = [
     },
     {
         type: "expirement",
-        startTime: "2021-03-13 14:00",
-        endTime: "2021-03-13 17:00",
+        startTime: "2021-03-13 13:00",
+        endTime: "2021-03-13 16:00",
         timezone: "America/Los_Angeles",
         title: "实验课6",
         subtitle: "选课系统前端部分3 - 实现选课，删课功能",
@@ -197,8 +197,8 @@ export const P9 = [
     },
     {
         type: "expirement",
-        startTime: "2021-03-20 14:00",
-        endTime: "2021-03-20 17:00",
+        startTime: "2021-03-20 13:00",
+        endTime: "2021-03-20 16:00",
         timezone: "America/Los_Angeles",
         title: "实验课8",
         subtitle: "选课系统云部署2与课程答疑",
