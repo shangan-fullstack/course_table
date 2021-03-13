@@ -39,6 +39,14 @@ const useStyles = makeStyles((theme) => ({
   },
   maxWidth80: {
     maxWidth: '80vw'
+  },
+  pastCourse: {
+    color: "grey",
+    textDecoration: "line-through"
+  },
+  currentCourse: {
+    fontWeight: "bold",
+    color: "green"
   }
 }));
 
@@ -49,6 +57,7 @@ export default function CourseTimeline() {
   const period = useParams().period || legacyPeriod;
   const contents = CourseContents[period];
   const isLargeScreen = useMediaQuery('(min-width:600px)');
+  let assignedCss = false;
 
   return (
     <Timeline align="left" className={classes.maxWidth80}>
@@ -64,7 +73,7 @@ export default function CourseTimeline() {
       <TimelineItem key={content.title} className={classes.before}>
         <Container>
           <TimelineOppositeContent className={classes.maxWidth30}>
-            <Typography color="textSecondary">
+            <Typography color="textSecondary" className={getTimeStyle(content.startTime, content.endTime, content.timezone)}>
               {DateUtil.displayTimeInUserTimeZone(content.startTime, content.timezone)}
             </Typography>
           </TimelineOppositeContent>
@@ -98,5 +107,17 @@ export default function CourseTimeline() {
         <TimelineConnector/>
       </TimelineSeparator>
     );
+  }
+
+  function getTimeStyle(startTime, endTime, timezone) {
+    const compare = DateUtil.compareTime(startTime, endTime, timezone);
+    if (compare === -1) {
+      return classes.pastCourse;
+    }
+    if (!assignedCss) {
+      assignedCss = true;
+      return classes.currentCourse;
+    }
+    return null;
   }
 }
