@@ -169,8 +169,8 @@ export const P9 = [
     },
     {
         type: "expirement",
-        startTime: "2021-03-14 13:00",
-        endTime: "2021-03-14 16:00",
+        startTime: "2021-03-14 12:00",
+        endTime: "2021-03-14 15:00",
         timezone: "America/Los_Angeles",
         title: "实验课6",
         subtitle: "选课系统前端部分3 - 实现选课，删课功能",
