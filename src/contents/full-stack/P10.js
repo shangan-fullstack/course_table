@@ -1,8 +1,8 @@
 export const P10 = [
     {
         type: "non_expirement",
-        startTime: "2021-03-27 10:00",
-        endTime: "2021-03-27 12:00",
+        startTime: "2021-04-03 10:00",
+        endTime: "2021-04-03 12:00",
         timezone: "America/Los_Angeles",
         title: "第二章 JS基础（一）",
         topics: [
@@ -16,8 +16,8 @@ export const P10 = [
     },
     {
         type: "non_expirement",
-        startTime: "2021-03-28 10:00",
-        endTime: "2021-03-28 12:00",
+        startTime: "2021-04-04 10:00",
+        endTime: "2021-04-04 12:00",
         timezone: "America/Los_Angeles",
         title: "第三章 JS基础（二）",
         topics: [
@@ -30,26 +30,26 @@ export const P10 = [
     },
     {
         type: "non_expirement",
-        startTime: "2021-03-28 14:00",
-        endTime: "2021-03-28 16:00",
+        startTime: "2021-04-04 14:00",
+        endTime: "2021-04-04 16:00",
         timezone: "America/Los_Angeles",
-        title: "第四章 HTML与CSS",
+        title: "第四章 HTML,CSS及React",
         topics: [
             "HTML是一棵树",
             "HTML行状元素，块状元素与可变元素",
             "HTML基础组件",
-            "CSS基础：盒模型与flex布局"
+            "CSS基础：盒模型与flex布局",
+            "什么是React?什么是JSX?",
+            "React生命周期",
         ]
     },
     {
         type: "non_expirement",
-        startTime: "2021-04-03 10:00",
-        endTime: "2021-04-03 12:00",
+        startTime: "2021-04-10 10:00",
+        endTime: "2021-04-10 12:00",
         timezone: "America/Los_Angeles",
         title: "第五章 React",
         topics: [
-            "什么是React?什么是JSX?",
-            "React生命周期",
             "state与props",
             "创建一个React项目",
             "React Hook"
@@ -57,25 +57,10 @@ export const P10 = [
     },
     {
         type: "expirement",
-        startTime: "2021-04-03 14:00",
-        endTime: "2021-04-03 17:00",
+        startTime: "2021-04-10 14:00",
+        endTime: "2021-04-10 17:00",
         timezone: "America/Los_Angeles",
         title: "实验课1",
-        subtitle: "制作COVID case map",
-        topics: [
-            "本节实验课的目的是通过React与Google Map合用，展示covid19的case",
-            "实践React工作流程(workflow)",
-            "如何申请一个Google Map API key",
-            "如何通过AJAX将数据展示在地图上",
-            "[可选额外内容]：根据缩放动态展示国家/洲/县数据"
-        ]
-    },
-    {
-        type: "expirement",
-        startTime: "2021-04-04 14:00",
-        endTime: "2021-04-04 17:00",
-        timezone: "America/Los_Angeles",
-        title: "实验课2",
         subtitle: "选课系统前端部分1 - 基础页面的展示",
         topics: [
             "选课系统前端实验课分为三个部分，本节实验课是用React框架重构实验课1的内容，引入了React Router, axios, Material UI等现代框架/包替换原生解决方案.",
@@ -87,9 +72,24 @@ export const P10 = [
         ]
     },
     {
+        type: "expirement",
+        startTime: "2021-04-11 14:00",
+        endTime: "2021-04-11 17:00",
+        timezone: "America/Los_Angeles",
+        title: "实验课2",
+        subtitle: "制作COVID case map",
+        topics: [
+            "本节实验课的目的是通过React与Google Map合用，展示covid19的case",
+            "实践React工作流程(workflow)",
+            "如何申请一个Google Map API key",
+            "如何通过AJAX将数据展示在地图上",
+            "[可选额外内容]：根据缩放动态展示国家/洲/县数据"
+        ]
+    },
+    {
         type: "non_expirement",
-        startTime: "2021-04-10 10:00",
-        endTime: "2021-04-10 12:00",
+        startTime: "2021-04-17 10:00",
+        endTime: "2021-04-17 12:00",
         timezone: "America/Los_Angeles",
         title: "第六章 Spring Boot",
         topics: [
@@ -104,8 +104,8 @@ export const P10 = [
     },
     {
         type: "expirement",
-        startTime: "2021-04-10 14:00",
-        endTime: "2021-04-10 17:00",
+        startTime: "2021-04-17 14:00",
+        endTime: "2021-04-17 17:00",
         timezone: "America/Los_Angeles",
         title: "实验课3",
         subtitle: "选课系统后端部分1：设计RESTful API，返回in memory数据库的内容",
@@ -122,8 +122,8 @@ export const P10 = [
     },
     {
         type: "non_expirement",
-        startTime: "2021-04-11 10:00",
-        endTime: "2021-04-11 12:00",
+        startTime: "2021-04-18 10:00",
+        endTime: "2021-04-18 12:00",
         timezone: "America/Los_Angeles",
         title: "第七章 MySQL与Hibernate",
         topics: [
@@ -138,8 +138,8 @@ export const P10 = [
     },
     {
         type: "expirement",
-        startTime: "2021-04-17 09:30",
-        endTime: "2021-04-17 12:00",
+        startTime: "2021-04-24 09:30",
+        endTime: "2021-04-24 12:30",
         timezone: "America/Los_Angeles",
         title: "实验课4",
         subtitle: "选课系统后端部分2：Hibernate的ORM绑定，从MySQL数据库拿取数据",
@@ -154,8 +154,8 @@ export const P10 = [
     },
     {
         type: "expirement",
-        startTime: "2021-04-17 14:00",
-        endTime: "2021-04-17 17:00",
+        startTime: "2021-04-24 14:00",
+        endTime: "2021-04-24 17:00",
         timezone: "America/Los_Angeles",
         title: "实验课5",
         subtitle: "选课系统前端部分2 - 实现登录, cookies存储，前后端整合",
@@ -169,8 +169,8 @@ export const P10 = [
     },
     {
         type: "expirement",
-        startTime: "2021-04-18 14:00",
-        endTime: "2021-04-18 17:00",
+        startTime: "2021-04-25 14:00",
+        endTime: "2021-04-25 17:00",
         timezone: "America/Los_Angeles",
         title: "实验课6",
         subtitle: "选课系统前端部分3 - 实现选课，删课功能",
@@ -181,8 +181,8 @@ export const P10 = [
     },
     {
         type: "expirement",
-        startTime: "2021-04-24 14:00",
-        endTime: "2021-04-24 17:00",
+        startTime: "2021-05-01 14:00",
+        endTime: "2021-05-01 17:00",
         timezone: "America/Los_Angeles",
         title: "实验课7",
         subtitle: "选课系统云部署1",
@@ -197,8 +197,8 @@ export const P10 = [
     },
     {
         type: "expirement",
-        startTime: "2021-04-25 14:00",
-        endTime: "2021-04-25 17:00",
+        startTime: "2021-05-02 14:00",
+        endTime: "2021-05-02 17:00",
         timezone: "America/Los_Angeles",
         title: "实验课8",
         subtitle: "选课系统云部署2与课程答疑",
