@@ -88,8 +88,8 @@ export const P11 = [
     },
     {
         type: "non_expirement",
-        startTime: "2021-04-15 19:00",
-        endTime: "2021-04-15 21:00",
+        startTime: "2021-04-16 09:00",
+        endTime: "2021-04-16 11:00",
         timezone: "America/Los_Angeles",
         title: "第六章 Spring Boot",
         topics: [
@@ -138,8 +138,8 @@ export const P11 = [
     },
     {
         type: "expirement",
-        startTime: "2021-04-22 19:00",
-        endTime: "2021-04-22 21:00",
+        startTime: "2021-04-23 09:00",
+        endTime: "2021-04-23 11:00",
         timezone: "America/Los_Angeles",
         title: "实验课4",
         subtitle: "选课系统后端部分2：Hibernate的ORM绑定，从MySQL数据库拿取数据",
