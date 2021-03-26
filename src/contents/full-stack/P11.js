@@ -1,8 +1,8 @@
-export const P10 = [
+export const P11 = [
     {
         type: "non_expirement",
-        startTime: "2021-03-30 19:00",
-        endTime: "2021-03-30 21:00",
+        startTime: "2021-04-03 10:00",
+        endTime: "2021-04-03 12:00",
         timezone: "America/Los_Angeles",
         title: "第二章 JS基础（一）",
         topics: [
@@ -16,8 +16,8 @@ export const P10 = [
     },
     {
         type: "non_expirement",
-        startTime: "2021-04-03 14:00",
-        endTime: "2021-04-03 16:00",
+        startTime: "2021-04-04 10:00",
+        endTime: "2021-04-04 12:00",
         timezone: "America/Los_Angeles",
         title: "第三章 JS基础（二）",
         topics: [
@@ -45,8 +45,8 @@ export const P10 = [
     },
     {
         type: "non_expirement",
-        startTime: "2021-04-06 19:00",
-        endTime: "2021-04-06 21:00",
+        startTime: "2021-04-10 10:00",
+        endTime: "2021-04-10 12:00",
         timezone: "America/Los_Angeles",
         title: "第五章 React",
         topics: [
@@ -88,8 +88,8 @@ export const P10 = [
     },
     {
         type: "non_expirement",
-        startTime: "2021-04-13 19:00",
-        endTime: "2021-04-13 21:00",
+        startTime: "2021-04-15 19:00",
+        endTime: "2021-04-15 21:00",
         timezone: "America/Los_Angeles",
         title: "第六章 Spring Boot",
         topics: [
@@ -104,8 +104,8 @@ export const P10 = [
     },
     {
         type: "expirement",
-        startTime: "2021-04-17 14:00",
-        endTime: "2021-04-17 17:00",
+        startTime: "2021-04-17 09:00",
+        endTime: "2021-04-17 12:00",
         timezone: "America/Los_Angeles",
         title: "实验课3",
         subtitle: "选课系统后端部分1：设计RESTful API，返回in memory数据库的内容",
@@ -122,8 +122,8 @@ export const P10 = [
     },
     {
         type: "non_expirement",
-        startTime: "2021-04-18 14:00",
-        endTime: "2021-04-18 17:00",
+        startTime: "2021-04-18 09:00",
+        endTime: "2021-04-18 12:00",
         timezone: "America/Los_Angeles",
         title: "第七章 MySQL与Hibernate",
         topics: [
@@ -138,8 +138,8 @@ export const P10 = [
     },
     {
         type: "expirement",
-        startTime: "2021-04-20 19:00",
-        endTime: "2021-04-20 21:00",
+        startTime: "2021-04-22 19:00",
+        endTime: "2021-04-22 21:00",
         timezone: "America/Los_Angeles",
         title: "实验课4",
         subtitle: "选课系统后端部分2：Hibernate的ORM绑定，从MySQL数据库拿取数据",
@@ -154,8 +154,8 @@ export const P10 = [
     },
     {
         type: "expirement",
-        startTime: "2021-04-24 14:00",
-        endTime: "2021-04-24 17:00",
+        startTime: "2021-04-24 09:00",
+        endTime: "2021-04-24 12:00",
         timezone: "America/Los_Angeles",
         title: "实验课5",
         subtitle: "选课系统前端部分2 - 实现登录, cookies存储，前后端整合",
@@ -169,8 +169,8 @@ export const P10 = [
     },
     {
         type: "expirement",
-        startTime: "2021-04-25 14:00",
-        endTime: "2021-04-25 17:00",
+        startTime: "2021-04-25 09:00",
+        endTime: "2021-04-25 12:00",
         timezone: "America/Los_Angeles",
         title: "实验课6",
         subtitle: "选课系统前端部分3 - 实现选课，删课功能",
@@ -181,8 +181,8 @@ export const P10 = [
     },
     {
         type: "expirement",
-        startTime: "2021-05-01 14:00",
-        endTime: "2021-05-01 17:00",
+        startTime: "2021-05-01 09:00",
+        endTime: "2021-05-01 12:00",
         timezone: "America/Los_Angeles",
         title: "实验课7",
         subtitle: "选课系统云部署1",
@@ -197,8 +197,8 @@ export const P10 = [
     },
     {
         type: "expirement",
-        startTime: "2021-05-02 14:00",
-        endTime: "2021-05-02 17:00",
+        startTime: "2021-05-02 09:00",
+        endTime: "2021-05-02 12:00",
         timezone: "America/Los_Angeles",
         title: "实验课8",
         subtitle: "选课系统云部署2与课程答疑",
