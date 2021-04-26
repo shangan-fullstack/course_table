@@ -142,7 +142,7 @@ export const P12 = [
         endTime: "2021-05-22 12:30",
         timezone: "America/Los_Angeles",
         title: "实验课4",
-        subtitle: "选课系统后端部分2：Hibernate的ORM绑定，从MySQL数据库拿取数据",
+        subtitle: "实现Django Models，并与MySQL数据库交互进行CRUD操作",
         topics: [
             "后端分为两部分，本节实验课重点在Models，即ORM绑定，以及Serializer的实现。以及后端总体流程串讲。",
             "从零实战ORM绑定操作：主键绑定，外键绑定",
