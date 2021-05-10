@@ -73,8 +73,8 @@ export const P12 = [
     },
     {
         type: "expirement",
-        startTime: "2021-05-09 14:00",
-        endTime: "2021-05-09 17:00",
+        startTime: "2021-05-15 14:00",
+        endTime: "2021-05-15 17:00",
         timezone: "America/Los_Angeles",
         title: "实验课2",
         subtitle: "制作COVID case map",
@@ -88,8 +88,8 @@ export const P12 = [
     },
     {
         type: "non_expirement",
-        startTime: "2021-05-15 10:00",
-        endTime: "2021-05-15 12:00",
+        startTime: "2021-05-16 10:00",
+        endTime: "2021-05-16 12:00",
         timezone: "America/Los_Angeles",
         title: "第六章 Django",
         topics: [
@@ -104,8 +104,8 @@ export const P12 = [
     },
     {
         type: "expirement",
-        startTime: "2021-05-15 14:00",
-        endTime: "2021-05-15 17:00",
+        startTime: "2021-05-16 14:00",
+        endTime: "2021-05-16 17:00",
         timezone: "America/Los_Angeles",
         title: "实验课3",
         subtitle: "选课系统后端部分1：设计RESTful API，返回in memory数据库的内容",
@@ -120,8 +120,8 @@ export const P12 = [
     },
     {
         type: "non_expirement",
-        startTime: "2021-05-16 10:00",
-        endTime: "2021-05-16 12:30",
+        startTime: "2021-05-22 10:00",
+        endTime: "2021-05-22 12:30",
         timezone: "America/Los_Angeles",
         title: "第七章 Mysql与Django Models",
         topics: [
@@ -138,8 +138,8 @@ export const P12 = [
     },
     {
         type: "expirement",
-        startTime: "2021-05-22 10:00",
-        endTime: "2021-05-22 12:30",
+        startTime: "2021-05-22 14:00",
+        endTime: "2021-05-22 16:30",
         timezone: "America/Los_Angeles",
         title: "实验课4",
         subtitle: "实现Django Models，并与MySQL数据库交互进行CRUD操作",
@@ -154,8 +154,8 @@ export const P12 = [
     },
     {
         type: "expirement",
-        startTime: "2021-05-23 09:00",
-        endTime: "2021-05-23 12:00",
+        startTime: "2021-05-23 14:00",
+        endTime: "2021-05-23 17:00",
         timezone: "America/Los_Angeles",
         title: "实验课5",
         subtitle: "选课系统前端部分2 - 实现登录, cookies存储，前后端整合",
@@ -170,8 +170,8 @@ export const P12 = [
     },
     {
         type: "expirement",
-        startTime: "2021-05-23 14:00",
-        endTime: "2021-05-23 17:00",
+        startTime: "2021-05-29 09:00",
+        endTime: "2021-05-29 12:00",
         timezone: "America/Los_Angeles",
         title: "实验课6",
         subtitle: "选课系统前端部分3 - 实现选课，删课功能",
@@ -182,8 +182,8 @@ export const P12 = [
     },
     {
         type: "expirement",
-        startTime: "2021-05-29 09:00",
-        endTime: "2021-05-29 12:00",
+        startTime: "2021-05-29 14:00",
+        endTime: "2021-05-29 17:00",
         timezone: "America/Los_Angeles",
         title: "实验课7",
         subtitle: "选课系统云部署1",
