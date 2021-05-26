@@ -170,8 +170,8 @@ export const P12 = [
     },
     {
         type: "expirement",
-        startTime: "2021-05-29 09:00",
-        endTime: "2021-05-29 12:00",
+        startTime: "2021-05-28 14:30",
+        endTime: "2021-05-28 17:30",
         timezone: "America/Los_Angeles",
         title: "实验课6",
         subtitle: "选课系统前端部分3 - 实现选课，删课功能",
@@ -182,8 +182,8 @@ export const P12 = [
     },
     {
         type: "expirement",
-        startTime: "2021-05-29 14:00",
-        endTime: "2021-05-29 17:00",
+        startTime: "2021-05-29 09:00",
+        endTime: "2021-05-29 12:00",
         timezone: "America/Los_Angeles",
         title: "实验课7",
         subtitle: "选课系统云部署1",
