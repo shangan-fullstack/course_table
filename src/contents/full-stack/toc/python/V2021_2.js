@@ -147,7 +147,7 @@ export const V2021_2 = {
   14: {
     type: "expirement",
     title: "实验课7",
-    subtitle: "选课系统云部署1",
+    subtitle: "选课系统云部署",
     topics: [
       "安装各种AWS部署工具",
       "AWS VPC，Security Group简介",
