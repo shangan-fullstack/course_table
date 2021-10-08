@@ -1,20 +1,29 @@
-import moment from 'moment-timezone';
+import { DateTime } from "luxon";
 
 export const DateUtil = {
-    displayTimeInUserTimeZone(time, timezone, format='MM-DD ddd hh:mm a z') {
-        return moment.tz(time, timezone).clone().tz(moment.tz.guess()).format(format);
+    displayTimeInUserTimeZone(time, timezone, format='MM-dd ccc hh:mm a ZZZZZ', overrideTimezone) {
+        const defaultZone = this.buildTime(time, timezone);
+        const reZoned = defaultZone.setZone(overrideTimezone); // To local timezone
+        return reZoned.toFormat(format);
     },
 
     compareTime(startTime, endTime, timezone) {
-        const current = moment(new Date());
-        const courseStartTime = moment.tz(startTime, timezone);
-        const courseEndTime = moment.tz(endTime, timezone);
-        if (courseStartTime.isSameOrBefore(current) && courseEndTime.isSameOrAfter(current)) {
+        const current = DateTime.now();
+        const courseStartTime = this.buildTime(startTime, timezone);
+        const courseEndTime = this.buildTime(endTime, timezone);
+        if (courseStartTime <= current && courseEndTime >= current) {
             return 0;
         }
-        if (courseStartTime.isBefore(current)) {
+        if (courseStartTime <current) {
             return -1;
         }
         return 1;
+    },
+
+    buildTime(time, timezone) {
+        return DateTime.fromFormat(time, "yyyy-MM-dd HH:mm", {
+            zone: timezone,
+            setZone: true
+        });
     }
 };
