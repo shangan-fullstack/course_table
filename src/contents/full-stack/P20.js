@@ -1,5 +1,5 @@
 import {toContentDetails} from "../../util/ContentUtil";
-import {V2021_2} from "./toc/java/V2021_2";
+import {V2021_2} from "./toc/python/V2021_2";
 
 export const P20 = toContentDetails([
   [ // 2
