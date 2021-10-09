@@ -1,7 +1,7 @@
 import {toContentDetails} from "../../util/ContentUtil";
 import {V2021_2} from "./toc/java/V2021_2";
 
-export const P19 = toContentDetails([
+export const P20 = toContentDetails([
   [ // 2
     "2021-10-23",
     "07:00",
