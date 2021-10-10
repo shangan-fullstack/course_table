@@ -44,7 +44,7 @@ export const P20 = toContentDetails([
   ],
   [ // 10 Wed
     "2021-11-10",
-    "17:00",
+    "16:00",
     "19:00",
   ],
   [ // 11 - exp
