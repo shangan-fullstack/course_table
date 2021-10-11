@@ -6,6 +6,7 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { DateUtil } from '../util/DateUtil';
+import {useSelector} from "react-redux";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -32,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
 export default function CourseDeatilAccordion(props) {
     const classes = useStyles();
     const [expand, setExpand] = useState(false);
+    const timezone = useSelector(state => state.timezone.timezone);
 
     return (
         <div className={classes.root}>
@@ -65,7 +67,7 @@ export default function CourseDeatilAccordion(props) {
 
     function getStartAndEndTime() {
         const format = 'HH:mm z';
-        return `${DateUtil.displayTimeInUserTimeZone(props.startTime, props.timezone, format)} - ${DateUtil.displayTimeInUserTimeZone(props.endTime, props.timezone, format)}`;
+        return `${DateUtil.displayTimeInUserTimeZone(props.startTime, props.timezone, timezone, format)} - ${DateUtil.displayTimeInUserTimeZone(props.endTime, props.timezone, timezone, format)}`;
     }
 
 

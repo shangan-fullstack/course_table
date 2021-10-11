@@ -1,7 +1,8 @@
 import { DateTime } from "luxon";
+import { zones } from 'tzdata';
 
 export const DateUtil = {
-    displayTimeInUserTimeZone(time, timezone, format='MM-dd ccc hh:mm a ZZZZZ', overrideTimezone) {
+    displayTimeInUserTimeZone(time, timezone, overrideTimezone, format='MM-dd ccc hh:mm a ZZZZZ') {
         const defaultZone = this.buildTime(time, timezone);
         const reZoned = defaultZone.setZone(overrideTimezone); // To local timezone
         return reZoned.toFormat(format);
@@ -25,5 +26,12 @@ export const DateUtil = {
             zone: timezone,
             setZone: true
         });
+    },
+
+    getAllValidTimezones() {
+       return Object.entries(zones)
+          .filter(([zoneName, v]) => Array.isArray(v))
+          .map(([zoneName, v]) => zoneName)
+          .filter(tz => DateTime.local().setZone(tz).isValid)
     }
 };

@@ -15,6 +15,7 @@ import {useParams} from 'react-router-dom';
 import {Container, useMediaQuery} from "@material-ui/core";
 import WebIcon from '@material-ui/icons/Web';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
+import {useSelector} from "react-redux";
 
 const useStyles = makeStyles((theme) => ({
   block: {
@@ -50,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const legacyPeriod = 8;
+const legacyPeriod = 17;
 
 export default function CourseTimeline() {
   const classes = useStyles();
@@ -58,6 +59,7 @@ export default function CourseTimeline() {
   const contents = CourseContents[period];
   const isLargeScreen = useMediaQuery('(min-width:600px)');
   let assignedCss = false;
+  const timezone = useSelector(state => state.timezone.timezone);
 
   return (
     <Timeline align="left" className={classes.maxWidth80}>
@@ -74,7 +76,7 @@ export default function CourseTimeline() {
         <Container>
           <TimelineOppositeContent className={classes.maxWidth30}>
             <Typography color="textSecondary" className={getTimeStyle(content.startTime, content.endTime, content.timezone)}>
-              {DateUtil.displayTimeInUserTimeZone(content.startTime, content.timezone)}
+              {DateUtil.displayTimeInUserTimeZone(content.startTime, content.timezone, timezone)}
             </Typography>
           </TimelineOppositeContent>
         </Container>

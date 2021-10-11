@@ -5,6 +5,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import TimezoneSelect from "./components/TimezoneSelect";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Router basename="/course_table">
         <Switch>
           <Route path={["/:period", "/", "/course_table", "/course_table/", "/course_table/:period"]}>
+            <TimezoneSelect />
             <CourseTimeline/>
           </Route>
         </Switch>
