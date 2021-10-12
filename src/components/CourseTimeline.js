@@ -6,7 +6,7 @@ import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
 import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
-import CourseDeatilAccordion from './CourseDetailAccordion';
+import CourseDetailAccordion from './CourseDetailAccordion';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import Typography from '@material-ui/core/Typography';
 import {CourseContents} from '../contents/CourseContents';
@@ -83,7 +83,7 @@ export default function CourseTimeline() {
         {renderTimelineDot(content.type)}
         <Container>
           <TimelineContent className={isLargeScreen ? classes.width40 : classes.width50}>
-            <CourseDeatilAccordion {...content} />
+            <CourseDetailAccordion {...content} />
           </TimelineContent>
         </Container>
       </TimelineItem>

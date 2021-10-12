@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default function CourseDeatilAccordion(props) {
+export default function CourseDetailAccordion(props) {
     const classes = useStyles();
     const [expand, setExpand] = useState(false);
     const timezone = useSelector(state => state.timezone.timezone);
@@ -66,8 +66,7 @@ export default function CourseDeatilAccordion(props) {
     }
 
     function getStartAndEndTime() {
-        const format = 'HH:mm z';
-        return `${DateUtil.displayTimeInUserTimeZone(props.startTime, props.timezone, timezone, format)} - ${DateUtil.displayTimeInUserTimeZone(props.endTime, props.timezone, timezone, format)}`;
+        return `${DateUtil.displayTimeInUserTimeZone(props.startTime, props.timezone, timezone, 'HH:mm')} - ${DateUtil.displayTimeInUserTimeZone(props.endTime, props.timezone, timezone, 'HH:mm z')}`;
     }
 
 
