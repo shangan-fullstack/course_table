@@ -75,8 +75,8 @@ export default function CourseTimeline() {
       <TimelineItem key={content.title} className={classes.before}>
         <Container>
           <TimelineOppositeContent className={classes.maxWidth30}>
-            <Typography color="textSecondary" className={getTimeStyle(content.startTime, content.endTime, content.timezone)}>
-              {DateUtil.displayTimeInUserTimeZone(content.startTime, content.timezone, timezone)}
+            <Typography color="textSecondary">
+              {renderTimes(content)}
             </Typography>
           </TimelineOppositeContent>
         </Container>
@@ -88,6 +88,21 @@ export default function CourseTimeline() {
         </Container>
       </TimelineItem>
     ));
+  }
+
+  function renderTimes(content) {
+    if (Array.isArray(content.startTime)) {
+      const elements = []
+      for (let i = 0; i < content.startTime.length; i++) {
+        elements.push(
+            <div className={getTimeStyle(content.startTime[i], content.endTime[i], content.timezone[i])}>
+              {DateUtil.displayTimeInUserTimeZone(content.startTime[i], content.timezone[i], timezone)}
+            </div>
+        )
+      }
+      return elements;
+    }
+    return DateUtil.displayTimeInUserTimeZone(content.startTime, content.timezone, timezone)
   }
 
   function renderTimelineDot(type) {

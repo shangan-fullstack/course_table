@@ -66,7 +66,20 @@ export default function CourseDetailAccordion(props) {
     }
 
     function getStartAndEndTime() {
-        return `${DateUtil.displayTimeInUserTimeZone(props.startTime, props.timezone, timezone, 'HH:mm')} - ${DateUtil.displayTimeInUserTimeZone(props.endTime, props.timezone, timezone, 'HH:mm z')}`;
+        if (Array.isArray(props.startTime)) {
+            let elements = [];
+            for (let i = 0; i < props.startTime.length; i++) {
+                elements.push(
+                    <p>
+                        {DateUtil.displayTimeInUserTimeZone(props.startTime[i], props.timezone[i], timezone, 'HH:mm')} - {DateUtil.displayTimeInUserTimeZone(props.endTime[i], props.timezone[i], timezone, 'HH:mm z')}
+                    </p>
+                );
+            }
+            return elements;
+        } else {
+            return <p>{DateUtil.displayTimeInUserTimeZone(props.startTime, props.timezone, timezone, 'HH:mm')} - {DateUtil.displayTimeInUserTimeZone(props.endTime, props.timezone, timezone, 'HH:mm z')}</p>;
+        }
+
     }
 
 
