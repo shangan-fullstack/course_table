@@ -5,7 +5,6 @@ function CreateTime(date, startTime, endTime, timezone = "America/Los_Angeles") 
 }
 
 function CreateTimes(date, startTime, endTime, timezone = "America/Los_Angeles") {
-  console.log(date, startTime, endTime);
   if (Array.isArray(date)) {
     this.startTime = [];
     this.endTime = [];

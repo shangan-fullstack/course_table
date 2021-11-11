@@ -93,13 +93,19 @@ export default function CourseTimeline() {
   function renderTimes(content) {
     if (Array.isArray(content.startTime)) {
       const elements = []
-      for (let i = 0; i < content.startTime.length; i++) {
+      let i = 0;
+      for (; i < content.startTime.length - 1; i++) {
         elements.push(
             <div className={getTimeStyle(content.startTime[i], content.endTime[i], content.timezone[i])}>
-              {DateUtil.displayTimeInUserTimeZone(content.startTime[i], content.timezone[i], timezone)}
+              {DateUtil.displayTimeInUserTimeZone(content.startTime[i], content.timezone[i], timezone, 'MM-dd ccc hh:mm a')}
             </div>
         )
       }
+      elements.push(
+          <div className={getTimeStyle(content.startTime[i], content.endTime[i], content.timezone[i])}>
+            {DateUtil.displayTimeInUserTimeZone(content.startTime[i], content.timezone[i], timezone)}
+          </div>
+      )
       return elements;
     }
     return DateUtil.displayTimeInUserTimeZone(content.startTime, content.timezone, timezone)
