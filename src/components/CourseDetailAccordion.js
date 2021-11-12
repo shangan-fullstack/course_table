@@ -71,7 +71,7 @@ export default function CourseDetailAccordion(props) {
             for (let i = 0; i < props.startTime.length; i++) {
                 elements.push(
                     <p>
-                        {DateUtil.displayTimeInUserTimeZone(props.startTime[i], props.timezone[i], timezone, 'HH:mm')} - {DateUtil.displayTimeInUserTimeZone(props.endTime[i], props.timezone[i], timezone, 'HH:mm z')}
+                        {DateUtil.displayTimeInUserTimeZone(props.startTime[i], props.timezone[i], timezone, 'MM-dd HH:mm')} - {DateUtil.displayTimeInUserTimeZone(props.endTime[i], props.timezone[i], timezone, 'HH:mm z')}
                     </p>
                 );
             }

@@ -108,7 +108,9 @@ export default function CourseTimeline() {
       )
       return elements;
     }
-    return DateUtil.displayTimeInUserTimeZone(content.startTime, content.timezone, timezone)
+    return (<div className={getTimeStyle(content.startTime, content.endTime, content.timezone)}>
+      {DateUtil.displayTimeInUserTimeZone(content.startTime, content.timezone, timezone)}
+    </div>);
   }
 
   function renderTimelineDot(type) {
