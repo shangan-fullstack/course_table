@@ -3,7 +3,7 @@ import {P18} from "./full-stack/P18";
 import {P19} from "./full-stack/P19";
 import {P20} from "./full-stack/P20";
 import {P21} from "./full-stack/P21";
-import {P22} from "./full-stack/P20";
+import {P22} from "./full-stack/P22";
 
 export const CourseContents = {
   17: P17,
