@@ -3,7 +3,7 @@ import {V2021_1} from "./toc/python/V2021_1";
 
 export const P25 = toContentDetails([
   [ // 2
-    "2022-03-04",
+    "2022-03-03",
     "18:00",
     "20:00",
   ],
