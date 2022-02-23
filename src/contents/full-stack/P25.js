@@ -1,5 +1,5 @@
 import {toContentDetails} from "../../util/ContentUtil";
-import {V2021_2} from "./toc/python/V2021_2";
+import {V2021_1} from "./toc/python/V2021_1";
 
 export const P25 = toContentDetails([
   [ // 2
@@ -57,9 +57,4 @@ export const P25 = toContentDetails([
     "13:00",
     "15:00",
   ],
-  [ // 13
-    "2022-03-29",
-    "17:00",
-    "19:00",
-  ],
-], V2021_2);
+], V2021_1);
