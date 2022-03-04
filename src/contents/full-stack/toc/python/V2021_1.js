@@ -72,7 +72,7 @@ export const V2021_1 = {
   },
   8: {
     type: "non_expirement",
-    title: "第七章 Mysql与Django Models",
+    title: "第八章 Mysql与Django Models",
     topics: [
       "数据库基础：事务性与ACID原则",
       "数据库基础：主键，外键与索引",
@@ -121,7 +121,7 @@ export const V2021_1 = {
   },
   12: {
     type: "non_expirement",
-    title: "第六章 系统设计以及优化",
+    title: "第十二章 系统设计以及优化",
     topics: [
       "优化的本质是压榨系统性能外加合理利用各种服务以及模型。",
       "什么是Cache, 什么是Strategy? Cashe的种类？",
