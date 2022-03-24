@@ -101,22 +101,28 @@ export const V2022_1 = {
   10: {
     type: "expirement",
     title: "实验课5",
-    subtitle: "选课系统前端部分2 - 实现登录, cookies存储，前后端整合",
+    subtitle: "选课系统前端部分2 - 实现登录, cookies存储，前后端整合，实现选课，删课功能",
     topics: [
-      "前端实验课分为三个部分，本节实验课是实现登录功能，以及对token的存储。",
+      "前端实验课分为两个部分，本节实验课是实现登录功能，以及对token的存储。",
       "借助Reactor Router设计login界面",
       "错误消息处理与展示，UI loading状态处理",
       "什么是cookies？怎样存储，读取，销毁cookies",
       "前端是如何连接后端的？全栈概念图串解",
+      "分析选课、删课的按钮功能应该由谁实现？如何优雅的传递回调函数？",
+      "错误消息处理与展示，UI loading状态处理",
     ]
   },
   11: {
     type: "expirement",
     title: "实验课6",
-    subtitle: "选课系统前端部分3 - 实现选课，删课功能",
+    subtitle: "选课系统云部署",
     topics: [
-      "分析选课、删课的按钮功能应该由谁实现？如何优雅的传递回调函数？",
-      "错误消息处理与展示，UI loading状态处理",
+      "安装各种AWS部署工具",
+      "AWS VPC，Security Group简介",
+      "什么是Docker?和VM对比优势？",
+      "在RDS上新建一个MySQL数据库",
+      "使用jib将后端打包至docker镜像，并发布到AWS ECR上",
+      "将前端部署至S3,后端部署至ECS",
     ]
   },
   12: {
