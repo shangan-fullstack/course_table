@@ -117,8 +117,8 @@ export const V2022_1 = {
     },
     11: {
         type: "expirement",
-        title: "实验课6",
-        subtitle: "选课系统云部署",
+        title: "实验课6-a",
+        subtitle: "选课系统云部署 - 理论+试验录屏",
         topics: [
           "安装各种AWS部署工具",
           "AWS VPC，Security Group简介",
@@ -129,6 +129,15 @@ export const V2022_1 = {
         ]
       },
     12: {
+        type: "expirement",
+        title: "实验课6-b",
+        subtitle: "选课系统云部署 - Q&A 答疑",
+        topics: [
+          "一对一针对部署试验答疑debug",
+          "回顾面试中可能问到的云部署知识点",
+        ]
+      },
+    13: {
       type: "non_expirement",
       title: "第六章 系统设计以及优化",
       topics: [
