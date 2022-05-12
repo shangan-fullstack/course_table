@@ -150,7 +150,7 @@ export const V2022_2 = {
       },
     14: {
       type: "non_expirement",
-      title: "第六章 系统设计以及优化",
+      title: "第七章 系统设计以及优化",
       topics: [
         "优化的本质是压榨系统性能外加合理利用各种服务以及模型。",
         "什么是Cache, 什么是Strategy? Cashe的种类？",
