@@ -23,5 +23,5 @@ export const CourseContents = {
   25: P25,
   26: P26,
   27: P27,
-  28: P28
+  28: P28,
 };
