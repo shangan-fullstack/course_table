@@ -139,13 +139,13 @@ export const V2022_2 = {
       },
     13: {
         type: "non_expirement",
-        title: "第六章 node.js理论+实践",
+        title: "第六章 node.js/GraphQL",
         subtitle: "后端如果用node.js来做会怎么样",
         topics: [
           "node.js的本质是什么",
           "node.js和spring相比优劣势分别是什么",
-          "REST API和GraphQL相比优劣势分别是什么",
-          "如果用node.js + GraphQL来再做一遍后端应该怎样做?"
+          "GraphQL和RESTful相比优劣势分别是什么",
+          "如果用node.js + RESTful来再做一遍后端应该怎样做?"
         ]
       },
     14: {
