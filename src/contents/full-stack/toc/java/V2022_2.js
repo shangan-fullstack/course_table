@@ -104,22 +104,22 @@ export const V2022_2 = {
     10: {
       type: "expirement",
       title: "实验课5",
-      subtitle: "选课系统前端部分2 - 实现登录, cookies存储，前后端整合，实现选课，删课功能",
+      subtitle: "选课系统前端部分2 - 实现登录, cookies存储",
       topics: [
         "前端实验课分为两个部分，本节实验课是实现登录功能，以及对token的存储。",
         "借助Reactor Router设计login界面",
         "错误消息处理与展示，UI loading状态处理",
         "什么是cookies？怎样存储，读取，销毁cookies",
         "前端是如何连接后端的？全栈概念图串解",
-        "分析选课、删课的按钮功能应该由谁实现？如何优雅的传递回调函数？",
-        "错误消息处理与展示，UI loading状态处理",
       ]
     },
     11: {
         type: "expirement",
-        title: "实验课6-a",
-        subtitle: "选课系统云部署 - 理论+试验录屏",
+        title: "实验课6",
+        subtitle: "选课系统前端部分3 + 选课系统云部署 - 理论+试验录屏",
         topics: [
+          "分析选课、删课的按钮功能应该由谁实现？如何优雅的传递回调函数？",
+          "前后端整合，实现选课，删课功能",
           "安装各种AWS部署工具",
           "AWS VPC，Security Group简介",
           "什么是Docker?和VM对比优势？",
@@ -134,7 +134,6 @@ export const V2022_2 = {
         subtitle: "选课系统云部署 - Q&A 答疑",
         topics: [
           "一对一针对部署试验答疑debug",
-          "回顾面试中可能问到的云部署知识点",
         ]
       },
     13: {
