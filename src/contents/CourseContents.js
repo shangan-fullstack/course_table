@@ -12,6 +12,7 @@ import { P27 } from "./full-stack/P27";
 import { P28 } from "./full-stack/P28";
 import { P29 } from "./full-stack/P29";
 import { P30 } from "./full-stack/P30";
+import { P31 } from "./full-stack/P31";
 
 export const CourseContents = {
   17: P17,
@@ -28,4 +29,5 @@ export const CourseContents = {
   28: P28,
   29: P29,
   30: P30,
+  31: P31,
 };
