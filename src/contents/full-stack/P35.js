@@ -1,5 +1,5 @@
 import {toContentDetails} from "../../util/ContentUtil";
-import {V2022_2} from "./toc/java/V2022_2";
+import { V2023_1 } from "./toc/java/V2023_1";
 
 export const P35 = toContentDetails([
   [ // 2 JS基础以及HTML, CSS
@@ -67,4 +67,9 @@ export const P35 = toContentDetails([
     "18:00",
     "20:00",
   ],
-], V2022_2);
+  [ // 13 - 系统设计以及优化
+  "2023-08-31",
+  "18:00",
+  "20:00",
+],
+], V2023_1);
